@@ -244,13 +244,15 @@
    width: 25vw;
    font-size: 20px;
    margin-top: 3vh;
+   padding: 10px;
  }
- #form #Message{
+ #form #message{
    width: 25vw;
    margin-top: 3vh; 
+   padding: 10px;
    color: rgb(135, 132, 132);
    font-size: 20px;
- }
+}
 #form #send{
    margin-top: 5vh;
     background-color: orange;
