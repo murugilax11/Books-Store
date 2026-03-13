@@ -3,6 +3,7 @@
 <head>
     <title>Books Stote</title>
     <link rel="stylesheet" href="BooksStore.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="body">
     
@@ -15,7 +16,11 @@
               <dt><a href="#products">Products</a></dt>
               <dt><a href="#about">About</a></dt>
               <dt><a href="#Contactus">Contact us</a></dt>
-              <dt><button>Sign in</button></dt>
+              <dt><span id="cartCount"><i class="fa fa-shopping-cart"></i> 0</span></dt>
+              <dt><button onclick="openLogin()">Sign In</button></dt>
+              <dt>or</dt>
+              <dt><button onclick="openSignUp()">Sign Up</button></dt>
+              
         </dl>
        </table>
     </header>
@@ -35,50 +40,50 @@
             <div class="line">
                <img src="images/img1.jpg" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>
               <div class="line">
                <img src="images/img4.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>  
             <div class="line">
                <img src="images/img10.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>
             <div id="row2">
                 <div class="line">
                <img src="images/img3.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>
               <div class="line">
                <img src="images/img9.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>  
             <div class="line">
                <img src="images/img2.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>
             </div>    
             <div id="row3">
                 <div class="line">
                <img src="images/img5.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>
               <div class="line">
                <img src="images/img7.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>  
             <div class="line">
                <img src="images/img4.png" alt="">
                <h4>Card Title</h4>
-               <button id="add2card">Add To Card</button>
+               <button class="addCart">Add To Cart</button>
             </div>
             </div>        
          </div>
@@ -105,5 +110,35 @@
        </div>
     </section>
     <footer><h4>Copyrights @2020</h4></footer>
+    <div id="loginBox" class="loginBox">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+<div id="loginBox" class="popup">
+
+<h2>Sign In</h2>
+
+<input type="text" id="loginUser" placeholder="Username">
+
+<input type="password" id="loginPass" placeholder="Password">
+
+<button onclick="loginUser()">Login</button>
+
+</div>
+<div id="signupBox" class="popup">
+
+    <h2>Create Account</h2>
+
+    <input type="text" placeholder="Enter Name" id="name">
+    <input type="text" placeholder="Mobile Number" id="mobile">
+    <input type="text" placeholder="Username" id="username">
+    <input type="password" placeholder="Password" id="password">
+
+    <button onclick="registerUser()">Sign Up</button>
+
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
